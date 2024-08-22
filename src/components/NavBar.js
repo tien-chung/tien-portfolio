@@ -4,10 +4,18 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import {
+  CONNECT,
+  HOME,
+  LETS_CONNECT,
+  PROJECTS,
+  SKILLS,
+  TIEN_CHUNG
+} from "../utils/constants";
 
 const NavBar = () => {
 
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState(`${HOME}`);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,20 +41,20 @@ const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand>
-            <span className="logo">Tien Chung</span>
+            <span className="logo">{TIEN_CHUNG}</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href={`#${HOME}`} className={activeLink === `${HOME}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(HOME)}>{HOME}</Nav.Link>
+              <Nav.Link href={`#${SKILLS}`} className={activeLink === `${SKILLS}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(SKILLS)}>{SKILLS}</Nav.Link>
+              <Nav.Link href={`#${PROJECTS}`} className={activeLink === `${PROJECTS}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(PROJECTS)}>{PROJECTS}</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let's Connect</span></button>
+              <HashLink to={`#${CONNECT}`}>
+                <button className="vvd"><span>{LETS_CONNECT}</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
