@@ -28,15 +28,15 @@ html {
 }
 
 .logo {
-  color: #7469B6;
+  color: #590D22;
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #FFE6E6 !important;
-  color: #fff !important;
+  background-color: #FFF0F3 !important;
+  color: #590D22 !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+.text {
+  color: #590D22;
 }
 
 p, a, li, button, ul {
@@ -96,14 +100,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #FFCCD5;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #7469B6 !important;
+  color: #590D22 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -156,8 +160,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #7469B6;
-  border: 1px solid #7469B6;
+  color: #590D22;
+  border: 1px solid #590D22;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -173,15 +177,15 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #E1AFD1;
+  background-color: #FFCCD5;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
-  color: #7469B6;
+  color: #800F2F;
 }
 .navbar-text button:hover {
-  color: #7469B6;
+  color: #800F2F;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -248,11 +252,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(164, 19, 60) -5.91%, rgba(255, 179, 193) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  color: #fff0f3;
 }
 .banner h1 {
   font-size: 65px;
@@ -261,16 +266,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #590D22;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #800F2F;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #590D22;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -288,8 +294,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  /* animation: updown 3s linear infinite; */
+  border-radius: 100px;
 }
+
+.banner img:hover {
+  animation-play-state: paused;
+}
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
