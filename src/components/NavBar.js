@@ -10,8 +10,8 @@ import {
   LETS_CONNECT,
   PROJECTS,
   SKILLS,
-  TIEN_CHUNG
 } from "../utils/constants";
+import logo from '../assets/img/computer.png'
 
 const NavBar = () => {
 
@@ -41,7 +41,7 @@ const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand>
-            <span className="logo">{TIEN_CHUNG}</span>
+            <img className="logo" src={logo} alt="logo"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
