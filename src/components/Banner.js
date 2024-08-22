@@ -17,7 +17,7 @@ const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="p-3">
             <span className="tagline">{WELCOME_MSG}</span>
             <h1>{NAME}{TIEN_CHUNG}</h1>
             <h2 className="text">{ROLE}</h2>
