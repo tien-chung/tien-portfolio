@@ -6,8 +6,10 @@ import whiteBelt from '../assets/img/whiteBelt/white-belt.png';
 import yellowBelt from '../assets/img/yellowBelt/yellow-belt.png';
 import greenBelt from '../assets/img/greenBelt/green-belt.png';
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import { useNavigate } from 'react-router-dom';
 
 const Achievements = () => {
+  const navigate = useNavigate();
     
   const responsive = {
     superLargeDesktop: {
@@ -53,7 +55,7 @@ const Achievements = () => {
                     <h5>Green Belt</h5>
                   </div>
                 </Carousel>;
-                <button onClick={() => console.log("let's connect!")}>{'Click here to see more'}<ArrowRightCircle size={25}/></button>
+                <button onClick={() => navigate('/Achievements')}>{'Click here to see more'}<ArrowRightCircle size={25}/></button>
               </div>
             </Col>
           </Row>

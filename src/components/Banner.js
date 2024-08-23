@@ -9,6 +9,7 @@ import {
   LETS_CONNECT,
   TIEN_CHUNG,
 } from '../utils/constants';
+import { navigateToUrl } from "../utils";
 
 const Banner = () => {
   return (
@@ -20,7 +21,7 @@ const Banner = () => {
             <h1>{NAME}{TIEN_CHUNG}</h1>
             <h2 className="text">{ROLE}</h2>
             <p>{INTRODUCTION_P1}</p>
-            <button onClick={() => console.log("let's connect!")}>{LETS_CONNECT}<ArrowRightCircle size={25}/></button>
+            <button onClick={() => navigateToUrl('https://www.linkedin.com/in/tchung24/')}>{LETS_CONNECT}<ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Tien's header img"/>
