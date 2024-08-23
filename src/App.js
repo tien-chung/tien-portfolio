@@ -6,13 +6,11 @@ import Achievements from './pages/Achievements';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/*" element={<Navigate to={'/Home'} />} />
-        <Route path="/Home" element={<Home/>} />
-        <Route path="/Achievements" element={<Achievements/>} />
+    <Routes>
+      <Route path="/*" element={<Navigate to={'/Home'} />} />
+      <Route path="/Home" element={<Home/>} />
+      <Route path="/Achievements" element={<Achievements/>} />
     </Routes>
-    </div>
   );
 }
 
