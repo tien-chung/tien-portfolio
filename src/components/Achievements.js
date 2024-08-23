@@ -41,21 +41,21 @@ const Achievements = () => {
                   Learning Achievements
                 </h2>
                 <p>{ACHIEVEMET_DES}</p>
-                <Carousel responsive={responsive} infinite={true} className="achievement-slider">
-                  <div className="item">
+                <Row>
+                  <Col xs={12} md={4} xl={4} className="item">
                     <img src={whiteBelt} alt="white-belt"/>
                     <h5>White Belt</h5>
-                  </div>
-                  <div className="item">
+                  </Col>
+                  <Col xs={12} md={4} xl={4} className="item">
                     <img src={yellowBelt} alt="yellow-belt"/>
                     <h5>Yellow Belt</h5>
-                  </div>
-                  <div className="item">
+                  </Col>
+                  <Col xs={12} md={4} xl={4} className="item">
                     <img src={greenBelt} alt="green-belt"/>
                     <h5>Green Belt</h5>
-                  </div>
-                </Carousel>;
-                <button onClick={() => navigate('/Achievements')}>{'Click here to see more'}<ArrowRightCircle size={25}/></button>
+                  </Col>
+                </Row>
+                <button onClick={() => navigate('/Achievements')}>{'Click here to see more!'}</button>
               </div>
             </Col>
           </Row>

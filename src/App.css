@@ -343,18 +343,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .achievement p {
-    color: #800F2F;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #800F2F;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 35px 0 35px 0;
 }
-.achievement-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.achievement-slider .item img {
+.achievement .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -364,15 +359,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.8px;
+  margin-top: 35px;
   align-items: center;
 }
 
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+.achievement-page {
+  padding: 120px 0 100px 0;
+}
+
+.achievement-page .img {
+  padding: 10px;
 }
 
 /************ Projects Css ************/
