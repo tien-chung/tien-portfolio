@@ -13,7 +13,7 @@ import { navigateToUrl } from "../utils";
 
 const Banner = () => {
   return (
-    <section className="banner" id="Home">
+    <section className="banner" id="About">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className="p-3">
