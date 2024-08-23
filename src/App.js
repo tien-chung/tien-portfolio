@@ -1,13 +1,15 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Banner from './components/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
+      <Routes>
+        <Route path="/*" element={<Navigate to={'/Home'} />} />
+        <Route path="/Home" element={<Home/>} />
+    </Routes>
     </div>
   );
 }
