@@ -7,7 +7,7 @@ import {
   LETS_CONNECT,
   PROJECTS,
   CERTS,
-} from "../utils/constants";
+} from '../utils/constants';
 import logo from '../assets/img/t.png';
 
 const NavBar = () => {
@@ -22,16 +22,16 @@ const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -44,12 +44,36 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href={`#${ABOUT}`} className={activeLink === `${ABOUT}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(ABOUT)}>{ABOUT}</Nav.Link>
-            <Nav.Link href={`#${CERTS}`} className={activeLink === `${CERTS}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(CERTS)}>{CERTS}</Nav.Link>
-            <Nav.Link href={`#${PROJECTS}`} className={activeLink === `${PROJECTS}` ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink(PROJECTS)}>{PROJECTS}</Nav.Link>
+            <Nav.Link 
+              as={HashLink} 
+              smooth 
+              to={`/Home#${ABOUT}`} 
+              className={activeLink === `${ABOUT}` ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink(ABOUT)}
+            >
+              {ABOUT}
+            </Nav.Link>
+            <Nav.Link 
+              as={HashLink} 
+              smooth 
+              to={`/Home#${CERTS}`} 
+              className={activeLink === `${CERTS}` ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink(CERTS)}
+            >
+              {CERTS}
+            </Nav.Link>
+            <Nav.Link 
+              as={HashLink} 
+              smooth 
+              to={`/Home#${PROJECTS}`} 
+              className={activeLink === `${PROJECTS}` ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink(PROJECTS)}
+            >
+              {PROJECTS}
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <HashLink to={`#${CONNECT}`}>
+            <HashLink smooth to={`#${CONNECT}`}>
               <button className="vvd"><span>{LETS_CONNECT}</span></button>
             </HashLink>
           </span>
