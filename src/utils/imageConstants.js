@@ -10,9 +10,6 @@ import LINKEDIN_JS from '../assets/img/linkedInLearning/js.png';
 import LINKEDIN_NO_SQL from '../assets/img/linkedInLearning/noSQL.png';
 import LINKEDIN_REACTJS from '../assets/img/linkedInLearning/reactJS.png';
 
-
-
-
 export const achievementsImg = [
     {
         src: WHITE_BELT_BASIC,
