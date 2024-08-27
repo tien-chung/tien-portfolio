@@ -6,7 +6,8 @@ import {
   ABOUT,
   LETS_CONNECT,
   PROJECTS,
-  CERTS,
+  ACHIEVEMENTS,
+  EXPERIENCE,
 } from '../utils/constants';
 import logo from '../assets/img/t.png';
 
@@ -56,20 +57,20 @@ const NavBar = () => {
             <Nav.Link 
               as={HashLink} 
               smooth 
-              to={`/Home#${CERTS}`} 
-              className={activeLink === `${CERTS}` ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink(CERTS)}
+              to={`/Home#Experience`} 
+              className={activeLink === `${EXPERIENCE}` ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink(EXPERIENCE)}
             >
-              {CERTS}
+              {EXPERIENCE}
             </Nav.Link>
             <Nav.Link 
               as={HashLink} 
               smooth 
-              to={`/Home#${PROJECTS}`} 
-              className={activeLink === `${PROJECTS}` ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink(PROJECTS)}
+              to={`/Home#${ACHIEVEMENTS}`} 
+              className={activeLink === `${ACHIEVEMENTS}` ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink(ACHIEVEMENTS)}
             >
-              {PROJECTS}
+              {ACHIEVEMENTS}
             </Nav.Link>
           </Nav>
           <span className="navbar-text">

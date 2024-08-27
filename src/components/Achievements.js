@@ -12,12 +12,10 @@ const Achievements = () => {
     return (
       <section className="achievement" id="Achievements">
         <Container>
-          <Row>
+          <Row className="bg-color">
             <Col>
+            <h2>Learning Achievements</h2>
               <div className="achievement-bx">
-                <h2>
-                  Learning Achievements
-                </h2>
                 <p>{ACHIEVEMET_DES}</p>
                 <Row>
                   <Col xs={12} md={4} xl={4} className="item">

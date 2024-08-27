@@ -1,8 +1,9 @@
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
 export const ABOUT = 'About';
-export const CERTS = 'Achievements';
+export const ACHIEVEMENTS = 'Achievements';
 export const PROJECTS = 'Projects';
+export const EXPERIENCE = 'Learning & Growth Journey';
 export const CONNECT = 'Connect';
 
 
@@ -15,3 +16,6 @@ export const LETS_CONNECT = 'Let\'s connect';
 
 // constatns for Achievements.js
 export const ACHIEVEMET_DES = 'This section highlights key certifications and learning achievements that demonstrate my commitment to continuous professional development. It includes accomplishments from my Security Journey, where I earned white, yellow, and green belts, as well as certificates from LinkedIn Learning courses. These achievements reflect my dedication to enhancing my skills, ensuring that I stay current with industry practices and that the code I write is secure and effective.';
+
+//constants for Experience.js
+export const EXPERIENCE_DES = 'This section represents my holistic approach to continuous improvement and development, encompassing formal education, practical work experiences, and personal projects. My academic background in Computer Science laid the groundwork for my technical expertise, while my professional experiences allowed me to apply and expand that knowledge in real-world scenarios. Alongside this, my personal projects reflect my passion for innovation and learning, providing a space to experiment, solve problems, and bring creative ideas to life. Together, these elements illustrate my commitment to lifelong learning and growth in the tech field.';
