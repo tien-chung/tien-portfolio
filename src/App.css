@@ -376,14 +376,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 10px;
 }
 
-/* Disable animation on mobile */
 @media only screen and (max-width: 767px) {
   .achievement-bx {
     text-align: center;
     margin: 0px;
     padding: 0px;
   }
-
 }
 
 /************ Experience Css ************/
@@ -405,6 +403,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+}
+
+@media only screen and (max-width: 767px) {
+  .experience p {
+    display: none;
+  }
 }
 
 .experience .center {
