@@ -1,7 +1,7 @@
 const ExperienceCard = ({ title, description, imgUrl }) => {
   return (
       <div className="experience-imgbx">
-        <img src={imgUrl} />
+        <img src={imgUrl} alt={description}/>
         <div className="experience-txtx">
           <h4>{title}</h4>
           <span>{description}</span>

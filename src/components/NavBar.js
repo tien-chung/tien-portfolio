@@ -5,7 +5,6 @@ import {
   CONNECT,
   ABOUT,
   LETS_CONNECT,
-  PROJECTS,
   ACHIEVEMENTS,
   EXPERIENCE,
 } from '../utils/constants';
