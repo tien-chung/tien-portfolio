@@ -13,7 +13,10 @@ const Experience = () => {
   const education = [
     {
       title: "College Journey",
-      description: "BS in Computer Science",
+      description: [
+        "Suffolk University",
+        "BS in Computer Science"
+      ],
       imgUrl: educationImg,
     },
   ]
@@ -21,7 +24,11 @@ const Experience = () => {
   const work = [
     {
       title: "Work Experiences",
-      description: "Full Stack Developer",
+      description: [
+        "Full Stack Developer",
+        "Robotics Repair Technician",
+        "Research Assistant",
+      ],
       imgUrl: workImg,
     },
   ]
@@ -29,7 +36,13 @@ const Experience = () => {
   const project = [
     {
       title: "Personal Projects",
-      description: "Projects",
+      description: [
+        "Quiz App",
+
+        "Senior Capstone",
+        "University Database",
+        "Vacation Spots"
+      ],
       imgUrl: projectImg,
     },
   ]
@@ -43,46 +56,31 @@ const Experience = () => {
           <Col xs={12} md={4}>
             <h3>Education</h3>
             <button onClick={() => navigate('/Education')}>
-              {
-                education.map((project, index) => {
-                  return (
-                    <ExperienceCard
-                      key={index}
-                      {...project}
-                      />
-                  )
-                })
-              }
+              <ExperienceCard 
+                title={education[0].title} 
+                description={education[0].description} 
+                imgUrl={education[0].imgUrl} 
+              />
             </button>
           </Col>
           <Col xs={12} md={4}>
             <h3>Work Experience</h3>
             <button onClick={() => navigate('/Work')}>
-              {
-                work.map((project, index) => {
-                  return (
-                    <ExperienceCard
-                      key={index}
-                      {...project}
-                      />
-                  )
-                })
-              }
+            <ExperienceCard 
+              title={work[0].title} 
+              description={work[0].description} 
+              imgUrl={work[0].imgUrl} 
+            />
             </button>
           </Col>
           <Col xs={12} md={4}>
             <h3>Personal Projects</h3>
             <button onClick={() => navigate('/Project')}>
-              {
-                project.map((project, index) => {
-                  return (
-                    <ExperienceCard
-                      key={index}
-                      {...project}
-                      />
-                  )
-                })
-              }
+              <ExperienceCard 
+                title={project[0].title} 
+                description={project[0].description} 
+                imgUrl={project[0].imgUrl} 
+              />
             </button>
           </Col>
         </Row>
