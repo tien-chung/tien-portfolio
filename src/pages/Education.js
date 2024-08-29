@@ -65,8 +65,8 @@ const Education = () => {
                   <div className="newspaper-feature">
                     <h2>{FEATURE}</h2>
                     <p>{FEATURE_DES}</p>
-                    <a className="card-link-color" href={FEATURE_LINK} target="_blank" rel="noopener noreferrer">
-                      <img src={suffolkNewsImg} alt="Newspaper Feature" />
+                    <img src={suffolkNewsImg} alt="Newspaper Feature" />
+                    <a href={FEATURE_LINK} target="_blank" rel="noopener noreferrer">
                       <p>{FEATURE_CHECKOUT}</p>
                     </a>
                   </div>

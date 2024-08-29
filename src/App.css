@@ -115,29 +115,33 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+  opacity: 1;
 }
 span.navbar-text {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .social-icon {
-    display: inline-block;
-    margin-left: 14px;
+  display: inline-block;
+  margin-left: 14px;
 }
 .social-icon a {
-    width: 42px;
-    height: 42px;
-    background: rgba(218, 12, 12, 0.1);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 6px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 42px;
+  height: 42px;
+  background: rgba(218, 12, 12, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .social-icon a::before {
   content: "";
@@ -284,6 +288,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+.banner button:hover {
+  text-decoration: underline;
+}
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -367,6 +374,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   margin-top: 35px;
   align-items: center;
+}
+
+.achievement button:hover {
+  text-decoration: underline;
 }
 
 .achievement-page {
@@ -499,6 +510,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 20px;
 }
 
+.newspaper-feature img {
+  padding: 10px 0 20px 0;
+}
+
+.newspaper-feature a {
+  text-decoration: none;
+  color: #590D22;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+}
+.newspaper-feature a:hover {
+  text-decoration: underline;
+}
 .education h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -510,23 +536,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 400px;
 }
 
-.color .card,
-.color .card-title {
+.card .color,
+.card-title .color {
   color: #590D22;
 }
 
-.color .card-text,
-.color .list-group-item {
+.card-text .color,
+.list-group-item .color{
   color: #800F2F;
 }
 
-.card-link-color {
+.card-body a {
+  text-decoration: none;
   color: #590D22;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+  
 }
 
 .coursework-list {
   margin-bottom: 0;
-  
 }
 
 /************ Contact Css ************/

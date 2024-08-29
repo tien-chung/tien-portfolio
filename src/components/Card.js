@@ -2,17 +2,17 @@ const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
   return (
     <div className="card color">
       <img src={imgSrc} className="card-img-top" alt={imgAlt}/>
-      <div class="card-body bg-color">
-        <h5 class="card-title color">{title}</h5>
-        <p class="card-text color ">{desc}</p>
+      <div className="card-body">
+        <h5 className="card-title color">{title}</h5>
+        <p className="card-text color">{desc}</p>
       </div>
-      <ul class="list-group list-group-flush">
+      <ul className="list-group list-group-flush">
         {items.map((item, index) => (
-            <li class="list-group-item color">{item}</li>
+            <li className="list-group-item color">{item}</li>
           ))}
       </ul>
-      <div class="card-body">
-        <a href={link} className="card-link-color">{linkTitle}</a>
+      <div className="card-body">
+        <a href={link}>{linkTitle}</a>
       </div>
     </div>
   )
