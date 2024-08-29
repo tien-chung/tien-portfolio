@@ -89,6 +89,7 @@ p.success {
 p.danger {
 	color: red;
 }
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -376,6 +377,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 10px;
 }
 
+.achievement-page .tagline {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(164, 19, 60) -5.91%, rgba(255, 179, 193) 111.58%);
+  font-size: 20px;
+  display: flex;
+  color: #fff0f3;
+}
+
 @media only screen and (max-width: 767px) {
   .achievement-bx {
     text-align: center;
@@ -461,6 +472,61 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+/************ Education Css ************/
+
+.education {
+  padding: 120px 0 100px 0;
+}
+
+.education .tagline {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(164, 19, 60) -5.91%, rgba(255, 179, 193) 111.58%);
+  font-size: 20px;
+  display: flex;
+  color: #fff0f3;
+}
+
+.education .card-custom,
+.coursework-and-newspaper {
+  padding: 20px;
+}
+
+.newspaper-feature {
+  padding-top: 20px;
+}
+
+.education h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: left;
+}
+
+.education .card-img-top {
+  width: 100%;
+  height: 400px;
+}
+
+.color .card,
+.color .card-title {
+  color: #590D22;
+}
+
+.color .card-text,
+.color .list-group-item {
+  color: #800F2F;
+}
+
+.card-link-color {
+  color: #590D22;
+}
+
+.coursework-list {
+  margin-bottom: 0;
+  
 }
 
 /************ Contact Css ************/

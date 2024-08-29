@@ -9,8 +9,10 @@ import {
   EXPERIENCE,
 } from '../utils/constants';
 import logo from '../assets/img/t.png';
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigate = useNavigate();
 
   const [activeLink, setActiveLink] = useState(`${ABOUT}`);
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +39,9 @@ const NavBar = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand>
-          <img className="logo" src={logo} alt="logo" />
+          <button onClick={() => navigate('/Home')}>
+            <img className="logo" src={logo} alt="logo" />
+          </button>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
