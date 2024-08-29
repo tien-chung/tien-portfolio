@@ -302,7 +302,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
-  border-radius: 100px;
+  border-radius: 30px;
 }
 
 .banner img:hover {
@@ -341,7 +341,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .achievement .bg-color {
   background: #FFCCD5;
-  border-radius: 64px;
+  border-radius: 30px;
   padding-top: 60px;
 }
 
@@ -512,6 +512,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .newspaper-feature img {
   padding: 10px 0 20px 0;
+  border-radius: 50px;
 }
 
 .newspaper-feature a {
@@ -534,11 +535,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .education .card-img-top {
   width: 100%;
   height: 400px;
+  border-radius: 30px;
 }
 
 .card .color,
 .card-title .color {
   color: #590D22;
+}
+
+.card-border {
+  border-radius: 30px !important;
 }
 
 .card-text .color,

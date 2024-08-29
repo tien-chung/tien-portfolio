@@ -1,6 +1,6 @@
 const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
   return (
-    <div className="card color">
+    <div className="card color card-border ">
       <img src={imgSrc} className="card-img-top" alt={imgAlt}/>
       <div className="card-body">
         <h5 className="card-title color">{title}</h5>
