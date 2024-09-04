@@ -8,13 +8,13 @@ const Timeline = () => {
   return (
     <Container>
       <Row className="justify-content-center">
-        <Col xs={12} className="text-center">
+        <Col xl={6} className="text-center">
           <div className="section-title mb-4">
-            <p className="text-muted mx-auto para-desc mt-4">
+            <div className="text-muted mx-auto para-desc mt-4">
             {WORK_EXPERIENCE_DES.map((des, index) => (
               <p key={index}>{des}</p>
             ))}
-            </p>
+            </div>
           </div>
         </Col>
       </Row>

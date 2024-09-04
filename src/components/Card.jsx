@@ -12,7 +12,7 @@ const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
           ))}
       </ul>
       <div className="card-body">
-        <a href={link}>{linkTitle}</a>
+        <a href={link} target="_blank" rel="noopener noreferrer">{linkTitle}</a>
       </div>
     </div>
   )

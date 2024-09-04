@@ -3,6 +3,9 @@ import mmIcon from '../assets/img/mm.jpg';
 import sbraIcon from '../assets/img/sb.png';
 import suffolkIcon from '../assets/img/suffolk.jpg';
 import microsoftIcon from '../assets/img/microsoft.png';
+import quiz from '../assets/img/projects/quizapp.png';
+import s3 from '../assets/img/projects/s3.png';
+import database from '../assets/img/projects/database.png';
 
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
@@ -41,7 +44,7 @@ export const UNIVERSITY_INFO = [
       "Nathan Miller Scholar",
     ],
     link: "https://www.suffolk.edu/",
-    linkTitle: "Suffolk.edu"
+    linkTitle: "Suffolk.edu",
   },
 ];
 export const RELATED_COURSEWORK = 'Related Coursework';
@@ -111,3 +114,46 @@ export const WORK_TIMELINE = [
     reverse: false,
   },
 ];
+
+// constants for Projects.jsx
+export const PROJECTS_DES = [
+  'Here are some awesome projects that I\'ve worked on :)',
+]
+
+export const PROJECTS_INFO = [
+  {
+    imgSrc: quiz,
+    imgAlt: "Quiz App",
+    title: "Anime Manga Quiz App",
+    desc: "A fun and interactive quiz app for anime and manga enthusiasts",
+    items: [
+      "ReactJS, State Management (useContext, and useReducer), Side Effects Management (data fetching), Responsive Design",
+    ],
+    link: "https://manga-anime-quiz.netlify.app/",
+    linkTitle: "manga-anime-quiz.netlify.app",
+  },
+  {
+    imgSrc: s3,
+    imgAlt: "Starset",
+    title: "Bringing Code to Life",
+    desc: "Implemented a Starset Programming Language Compiler",
+    items: [
+      "Traditional compiler design process: lexical analysis, syntax analysis, semantic analysis and interpretation",
+    ],
+    link: "https://drive.google.com/file/d/17qD_A0IkzeDQqsL4v_TejySC3S4rLCjD/view?usp=sharing",
+    linkTitle: "Symposium Poster",
+  },
+  {
+    imgSrc: database,
+    imgAlt: "database",
+    title: "University Database",
+    desc: "This is a dabase project include both Front end UI and back end services",
+    link: '',
+    linkTitle: '',
+    items: [
+      "JavaScript, Java, ReactJS, Java Spring Boot, MySQL, VSCode",
+    ],
+  },
+];
+
+export const GITHUB_LINK = "https://github.com/tien-chung";

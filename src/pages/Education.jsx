@@ -27,7 +27,7 @@ const Education = () => {
   return (
     <>
       <NavBar />
-      <Container className="education">
+      <Container className="edProj">
         <span className="tagline">{EDUCATION}</span>
         <Row>
             {UNIVERSITY_INFO.map((info, index) => (
