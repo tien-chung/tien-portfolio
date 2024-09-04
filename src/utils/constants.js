@@ -148,8 +148,8 @@ export const PROJECTS_INFO = [
     imgAlt: "database",
     title: "University Database",
     desc: "This is a dabase project include both Front end UI and back end services",
-    link: '',
-    linkTitle: '',
+    link: 'https://drive.google.com/drive/folders/1r6Fod5ZHnXc_zsoEHswe-BE0Y6bu61M_?usp=drive_link',
+    linkTitle: 'Screenshots of the application',
     items: [
       "JavaScript, Java, ReactJS, Java Spring Boot, MySQL, VSCode",
     ],
