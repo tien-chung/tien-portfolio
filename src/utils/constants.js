@@ -1,4 +1,8 @@
 import suffolkImg from '../assets/img/suffolk.jpg';
+import mmIcon from '../assets/img/mm.jpg';
+import sbraIcon from '../assets/img/sb.png';
+import suffolkIcon from '../assets/img/suffolk.jpg';
+import microsoftIcon from '../assets/img/microsoft.png';
 
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
@@ -37,7 +41,7 @@ export const UNIVERSITY_INFO = [
       "Nathan Miller Scholar",
     ],
     link: "https://www.suffolk.edu/",
-    linkTitle: "Suffolk University Website"
+    linkTitle: "Suffolk.edu"
   },
 ];
 export const RELATED_COURSEWORK = 'Related Coursework';
@@ -52,3 +56,58 @@ export const FEATURE = 'Newspaper Feature';
 export const FEATURE_DES = '"For her senior capstone project, computer science major Tien Chung helped bring StarSet, a largely forgotten programming language, back to life by implementing a compiler—an unprecedented achievement for an undergraduate, says Mathematics & Computer Science Professor Dmitry Zinoviev."';
 export const FEATURE_LINK = 'https://www.suffolk.edu/news-features/news/2023/05/17/16/51/commencement-cas-senior-stories';
 export const FEATURE_CHECKOUT = 'Check out my feature in Suffolk University\'s commencement stories!';
+
+//constants for Work.js
+export const WORK = 'Work Experience';
+export const WORK_EXPERIENCE_DES = [
+  'Welcome to my career journey! Although I\'m just starting my path as a Full Stack Developer, my experience spans several years and diverse roles. I began my career as a robotics trainer in high school, which led to a position at SoftBank Robotics. This role, which I continued throughout college, provided me with invaluable experience in maintaining and repairing advanced robotic systems.',
+  'At MassMutual, where I am currently a Full Stack Developer, I focus on delivering comprehensive solutions that enhance user experience and optimize processes. My work involves developing and maintaining top transactions on MassMutual.com, automating address updates, and leading projects to improve customer retention and satisfaction. I thrive in collaborative environments, leveraging my skills to support my teammates and drive impactful results.',
+  'In addition to my technical skills, I bring a strong foundation in teamwork, problem-solving, and continuous learning. I am committed to growing my expertise and contributing to innovative projects that align with business objectives and customer needs.',
+]
+export const WORK_TIMELINE = [
+  {
+    title: 'MassMutual',
+    role: 'Full Stack Developer',
+    duration: 'June 2023 - Present',
+    logo: mmIcon,
+    description: 'Developed and maintained top transactions on MassMutual.com, focusing on enhancing user experience and operational efficiency. Played key role in projects impacting over 40K annual transactions, collaborating closely with team members to deliver high-quality, scalable solutions aligned with business objectives.',
+    skills: 'React.js, React Hooks, Test Suites, Jest, MongoDB, Java, XML, Communications, Code Review, Agile Methodologies, Git, Github, JVM',
+    reverse: false,
+  },
+  {
+    title: 'SoftBank Robotics America',
+    role: 'Robotics Repair Technician',
+    duration: 'June 2019 - May 2022; Sept 2022 - May 2023',
+    logo: sbraIcon,
+    description: 'Maintained and repaired humanoid and autonomous robots to ensure high operational reliability. Designed repair protocols to improve efficiency and reduce downtime. Mentored team members to facilitate consistent repair processes.',
+    skills: 'Robotics Maintenance, Repair Protocols, Troubleshooting, Diagnostics, Data Analysis, Process Improvement, Technical Documentation, Time Management, Attention to Detail, Adaptability, Mentorship, Team Collaboration',
+    reverse: true,
+  },
+  {
+    title: 'MassMutual',
+    role: 'Digital Experience Developer Intern',
+    duration: 'May 2022 - Aug 2022',
+    logo: mmIcon,
+    description: 'Created accessible web components and spearheaded project to improve user engagement on MassMutual\'s website. Collaborated with team on redesigns and demonstrated strong agile development skills.',
+    skills: 'JavaScript, React.js, HTML5, CSS, SCSS, Bootstrap, Git, GitHub, Manual Testing, Code Review, Agile Methodologies, Jira, Webstorm, Visual Studio, Confluence, Figma, Oral Communication, Written Communication',
+    reverse: false,
+  },
+  {
+    title: 'Suffolk University',
+    role: 'Research Assistant',
+    duration: 'May 2021 - Sept 2021',
+    logo: suffolkIcon,
+    description: 'Collaborated with economics professor to assist in execution of departmental research project. Worked closely with faculty to facilitate communication and project progress.',
+    skills: 'MATLAB, C, Code Optimization, Computational Efficiency, Research Assistance, Collaboration, Communication, Code Structuring, Redundancy Reduction, Academic Research',
+    reverse: true,
+  },
+  {
+    title: 'MICROSOFT NEW ENGLAND RESEARCH & DEVELOPMENT CENTER',
+    role: 'TEALS High School Intern',
+    duration: 'July 2018',
+    logo: microsoftIcon,
+    description: 'Collaborated with development team to build SeeBoat App for MIT PhD student, involving coding, testing, and debugging tasks to enhance app functionality and user experience.',
+    skills: 'Software Development, Problem-Solving, Rapid Learning, Coding, Testing, Debugging, Version Control (GitHub), User Interface Design (XAML), Hardware Integration (Adafruit), Presentation Skills, Award Recognition',
+    reverse: false,
+  },
+];
