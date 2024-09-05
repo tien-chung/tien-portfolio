@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
 import {
-  CONNECT,
   ABOUT,
   LETS_CONNECT,
   ACHIEVEMENTS,
@@ -10,6 +9,7 @@ import {
 } from '../utils/constants';
 import logo from '../assets/img/t.png';
 import { useNavigate } from "react-router-dom";
+import { navigateToUrl } from "../utils";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -77,9 +77,9 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <HashLink smooth to={`#${CONNECT}`}>
-              <button className="vvd"><span>{LETS_CONNECT}</span></button>
-            </HashLink>
+            {/* <HashLink smooth to={`#${CONNECT}`}> */}
+              <button onClick={() => navigateToUrl('https://www.linkedin.com/in/tchung24/')}><span>{LETS_CONNECT}</span></button>
+            {/* </HashLink> */}
           </span>
         </Navbar.Collapse>
       </Container>

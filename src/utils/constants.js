@@ -6,6 +6,7 @@ import microsoftIcon from '../assets/img/microsoft.png';
 import quiz from '../assets/img/projects/quizapp.png';
 import s3 from '../assets/img/projects/s3.png';
 import database from '../assets/img/projects/database.png';
+import vacay from '../assets/img/projects/favoritePage.png';
 
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
@@ -152,6 +153,17 @@ export const PROJECTS_INFO = [
     linkTitle: 'Screenshots of the application',
     items: [
       "JavaScript, Java, ReactJS, Java Spring Boot, MySQL, VSCode",
+    ],
+  },
+  {
+    imgSrc: vacay,
+    imgAlt: "vacation spots",
+    title: "Vacation Spots",
+    desc: "A React-based web application that allows users to add and manage their own vacation destinations. Users can input details about their vacation spots and mark certain spots as their favorites for easy access.",
+    link: 'https://drive.google.com/drive/folders/1GaZIP40KO6l3euc2MuonVaPUVFc1AoZ3?usp=sharing',
+    linkTitle: 'Screenshots of the application',
+    items: [
+      "ReactJS, State Management, Side Effects Management (data fetching), Responsive Design, FireBase, Props",
     ],
   },
 ];
