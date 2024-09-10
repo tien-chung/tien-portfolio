@@ -8,6 +8,7 @@ import {
   PROJECTS_DES,
   PROJECTS_INFO,
 } from '../utils/constants';
+import Footer from '../components/Footer';
 
 const Project = () => {
   
@@ -43,6 +44,7 @@ const Project = () => {
             ))}
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }

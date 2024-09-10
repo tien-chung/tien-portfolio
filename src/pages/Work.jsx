@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import { Container, Row } from 'react-bootstrap';
 import { WORK } from '../utils/constants';
 import Timeline from '../components/Timeline';
+import Footer from '../components/Footer';
 
 const Work = () => {
   
@@ -19,6 +20,7 @@ const Work = () => {
           <Timeline/>
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }

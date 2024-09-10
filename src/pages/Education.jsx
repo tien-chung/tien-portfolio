@@ -13,6 +13,7 @@ import {
   UNIVERSITY_INFO,
 } from '../utils/constants';
 import suffolkNewsImg from '../assets/img/suffolkNews.png';
+import Footer from '../components/Footer';
 
 const Education = () => {
   
@@ -75,6 +76,7 @@ const Education = () => {
             ))}
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }

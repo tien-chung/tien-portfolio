@@ -72,7 +72,7 @@ export const WORK_TIMELINE = [
   {
     title: 'MassMutual',
     role: 'Full Stack Developer',
-    duration: 'June 2023 - Present',
+    duration: 'June 2023 - Sept 2024',
     logo: mmIcon,
     description: 'Developed and maintained top transactions on MassMutual.com, focusing on enhancing user experience and operational efficiency. Played key role in projects impacting over 40K annual transactions, collaborating closely with team members to deliver high-quality, scalable solutions aligned with business objectives.',
     skills: 'React.js, React Hooks, Test Suites, Jest, MongoDB, Java, XML, Communications, Code Review, Agile Methodologies, Git, Github, JVM',
@@ -169,3 +169,5 @@ export const PROJECTS_INFO = [
 ];
 
 export const GITHUB_LINK = "https://github.com/tien-chung";
+export const LINKEDIN_LINK = "https://www.linkedin.com/in/tchung24/";
+export const FOOTER_COPYRIGHT = "Copyright 2024. All Rights Reserved";

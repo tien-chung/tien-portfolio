@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import { achievementsImg } from '../utils/imageConstants';
+import Footer from '../components/Footer';
 
 const Achievements = () => {
   window.scrollTo(0,0);
@@ -20,6 +21,7 @@ const Achievements = () => {
           ))}
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }
