@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import { Container, Row } from 'react-bootstrap';

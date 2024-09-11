@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
@@ -10,7 +11,7 @@ import Project from './pages/Project';
 function App() {
   return (
     <Routes>
-      <Route path="/*" element={<Navigate to={'/Home'} />} />
+      <Route path="/*" element={<Navigate to="/Home" />} />
       <Route path="/Home" element={<Home/>} />
       <Route path="/Achievements" element={<Achievements/>} />
       <Route path="/Education" element={<Education/>} />

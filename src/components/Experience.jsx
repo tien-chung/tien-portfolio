@@ -1,51 +1,12 @@
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
-import { EXPERIENCE_DES } from "../utils/constants";
-import workImg from '../assets/img/work.jpg';
-import projectImg from '../assets/img/project.jpeg';
-import educationImg from '../assets/img/school.jpeg';
-import ExperienceCard from "./ExperienceCard";
-import { useNavigate } from "react-router-dom";
+import { EDUCATION_EXP, EXPERIENCE_DES, PROJECT_EXP, WORK_EXP } from '../utils/constants';
+import ExperienceCard from './ExperienceCard';
+import { useNavigate } from 'react-router-dom';
 
 const Experience = () => {  
   const navigate = useNavigate();
-  
-  const education = [
-    {
-      title: "College Journey",
-      description: [
-        "Suffolk University",
-        "BS in Computer Science"
-      ],
-      imgUrl: educationImg,
-    },
-  ]
-  
-  const work = [
-    {
-      title: "Work Experiences",
-      description: [
-        "Full Stack Developer",
-        "Robotics Repair Technician",
-        "Research Assistant",
-      ],
-      imgUrl: workImg,
-    },
-  ]
-  
-  const project = [
-    {
-      title: "Personal Projects",
-      description: [
-        "Quiz App",
-
-        "Senior Capstone",
-        "University Database",
-        "Vacation Spots"
-      ],
-      imgUrl: projectImg,
-    },
-  ]
   
   return (
     <section className="experience" id="Experience">
@@ -57,29 +18,29 @@ const Experience = () => {
             <h3>Education</h3>
             <button onClick={() => navigate('/Education')}>
               <ExperienceCard 
-                title={education[0].title} 
-                description={education[0].description} 
-                imgUrl={education[0].imgUrl} 
+                title={EDUCATION_EXP[0].title} 
+                description={EDUCATION_EXP[0].description} 
+                imgUrl={EDUCATION_EXP[0].imgUrl} 
               />
             </button>
           </Col>
           <Col xs={12} md={4}>
             <h3>Work Experience</h3>
             <button onClick={() => navigate('/Work')}>
-            <ExperienceCard 
-              title={work[0].title} 
-              description={work[0].description} 
-              imgUrl={work[0].imgUrl} 
-            />
+              <ExperienceCard 
+                title={WORK_EXP[0].title} 
+                description={WORK_EXP[0].description} 
+                imgUrl={WORK_EXP[0].imgUrl} 
+              />
             </button>
           </Col>
           <Col xs={12} md={4}>
             <h3>Personal Projects</h3>
             <button onClick={() => navigate('/Project')}>
               <ExperienceCard 
-                title={project[0].title} 
-                description={project[0].description} 
-                imgUrl={project[0].imgUrl} 
+                title={PROJECT_EXP[0].title} 
+                description={PROJECT_EXP[0].description} 
+                imgUrl={PROJECT_EXP[0].imgUrl} 
               />
             </button>
           </Col>

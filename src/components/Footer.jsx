@@ -1,7 +1,8 @@
-import { Container } from "react-bootstrap";
-import linkedIcon from "../assets/img/linkedin.png";
-import githubIcon from "../assets/img/github.png";
-import { FOOTER_COPYRIGHT, GITHUB_LINK, LINKEDIN_LINK } from "../utils/constants";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import linkedIcon from '../assets/img/linkedin.png';
+import githubIcon from '../assets/img/github.png';
+import { FOOTER_COPYRIGHT, GITHUB_LINK, LINKEDIN_LINK } from '../utils/constants';
 
 const Footer = () => {
   return (

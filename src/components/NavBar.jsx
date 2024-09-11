@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import {
   ABOUT,
@@ -8,8 +8,8 @@ import {
   EXPERIENCE,
 } from '../utils/constants';
 import logo from '../assets/img/t.png';
-import { useNavigate } from "react-router-dom";
-import { navigateToUrl } from "../utils";
+import { useNavigate } from 'react-router-dom';
+import { navigateToUrl } from '../utils';
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -26,9 +26,9 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   const onUpdateActiveLink = (value) => {
@@ -36,7 +36,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
       <Container>
         <Navbar.Brand>
           <button onClick={() => navigate('/Home')}>
@@ -60,7 +60,7 @@ const NavBar = () => {
             <Nav.Link 
               as={HashLink} 
               smooth 
-              to={`/Home#Experience`} 
+              to="/Home#Experience" 
               className={activeLink === `${EXPERIENCE}` ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink(EXPERIENCE)}
             >
@@ -78,7 +78,7 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             {/* <HashLink smooth to={`#${CONNECT}`}> */}
-              <button onClick={() => navigateToUrl('https://www.linkedin.com/in/tchung24/')}><span>{LETS_CONNECT}</span></button>
+            <button onClick={() => navigateToUrl('https://www.linkedin.com/in/tchung24/')}><span>{LETS_CONNECT}</span></button>
             {/* </HashLink> */}
           </span>
         </Navbar.Collapse>

@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from '../components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import { achievementsImg } from '../utils/imageConstants';

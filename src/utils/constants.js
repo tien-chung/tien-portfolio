@@ -7,6 +7,9 @@ import quiz from '../assets/img/projects/quizapp.png';
 import s3 from '../assets/img/projects/s3.png';
 import database from '../assets/img/projects/database.png';
 import vacay from '../assets/img/projects/favoritePage.png';
+import workImg from '../assets/img/work.jpg';
+import projectImg from '../assets/img/project.jpeg';
+import educationImg from '../assets/img/school.jpeg';
 
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
@@ -35,26 +38,26 @@ export const EDUCATION = 'Education';
 export const UNIVERSITY_INFO = [
   {
     imgSrc: suffolkImg,
-    imgAlt: "Sufolk University",
-    title: "Sufolk University",
-    desc: "BS in Computer Science, Minor in Graphic Design",
+    imgAlt: 'Sufolk University',
+    title: 'Sufolk University',
+    desc: 'BS in Computer Science, Minor in Graphic Design',
     items: [
-      "Graduation Year: 2023",
-      "Grade: Summa Cum Laude",
-      "College of Arts and Sciences Honors Scholar",
-      "Nathan Miller Scholar",
+      'Graduation Year: 2023',
+      'Grade: Summa Cum Laude',
+      'College of Arts and Sciences Honors Scholar',
+      'Nathan Miller Scholar',
     ],
-    link: "https://www.suffolk.edu/",
-    linkTitle: "Suffolk.edu",
+    link: 'https://www.suffolk.edu/',
+    linkTitle: 'Suffolk.edu',
   },
 ];
 export const RELATED_COURSEWORK = 'Related Coursework';
 export const COURSEWORKS = [
-  "Data Structures and Algorithms",
-  "Object-Oriented Programming",
-  "Architecture of Computer Systems",
-  "Introduction to Database Systems",
-  "Introduction to Computer Networks"
+  'Data Structures and Algorithms',
+  'Object-Oriented Programming',
+  'Architecture of Computer Systems',
+  'Introduction to Database Systems',
+  'Introduction to Computer Networks'
 ];
 export const FEATURE = 'Newspaper Feature';
 export const FEATURE_DES = '"For her senior capstone project, computer science major Tien Chung helped bring StarSet, a largely forgotten programming language, back to life by implementing a compiler—an unprecedented achievement for an undergraduate, says Mathematics & Computer Science Professor Dmitry Zinoviev."';
@@ -124,50 +127,87 @@ export const PROJECTS_DES = [
 export const PROJECTS_INFO = [
   {
     imgSrc: quiz,
-    imgAlt: "Quiz App",
-    title: "Anime Manga Quiz App",
-    desc: "A fun and interactive quiz app for anime and manga enthusiasts",
+    imgAlt: 'Quiz App',
+    title: 'Anime Manga Quiz App',
+    desc: 'A fun and interactive quiz app for anime and manga enthusiasts',
     items: [
-      "ReactJS, State Management (useContext, and useReducer), Side Effects Management (data fetching), Responsive Design",
+      'ReactJS, State Management (useContext, and useReducer), Side Effects Management (data fetching), Responsive Design',
     ],
-    link: "https://manga-anime-quiz.netlify.app/",
-    linkTitle: "manga-anime-quiz.netlify.app",
+    link: 'https://manga-anime-quiz.netlify.app/',
+    linkTitle: 'manga-anime-quiz.netlify.app',
   },
   {
     imgSrc: s3,
-    imgAlt: "Starset",
-    title: "Bringing Code to Life",
-    desc: "Implemented a Starset Programming Language Compiler",
+    imgAlt: 'Starset',
+    title: 'Bringing Code to Life',
+    desc: 'Implemented a Starset Programming Language Compiler',
     items: [
-      "Traditional compiler design process: lexical analysis, syntax analysis, semantic analysis and interpretation",
+      'Traditional compiler design process: lexical analysis, syntax analysis, semantic analysis and interpretation',
     ],
-    link: "https://drive.google.com/file/d/17qD_A0IkzeDQqsL4v_TejySC3S4rLCjD/view?usp=sharing",
-    linkTitle: "Symposium Poster",
+    link: 'https://drive.google.com/file/d/17qD_A0IkzeDQqsL4v_TejySC3S4rLCjD/view?usp=sharing',
+    linkTitle: 'Symposium Poster',
   },
   {
     imgSrc: database,
-    imgAlt: "database",
-    title: "University Database",
-    desc: "This is a dabase project include both Front end UI and back end services",
+    imgAlt: 'database',
+    title: 'University Database',
+    desc: 'This is a dabase project include both Front end UI and back end services',
     link: 'https://drive.google.com/drive/folders/1r6Fod5ZHnXc_zsoEHswe-BE0Y6bu61M_?usp=drive_link',
     linkTitle: 'Screenshots of the application',
     items: [
-      "JavaScript, Java, ReactJS, Java Spring Boot, MySQL, VSCode",
+      'JavaScript, Java, ReactJS, Java Spring Boot, MySQL, VSCode',
     ],
   },
   {
     imgSrc: vacay,
-    imgAlt: "vacation spots",
-    title: "Vacation Spots",
-    desc: "A React-based web application that allows users to add and manage their own vacation destinations. Users can input details about their vacation spots and mark certain spots as their favorites for easy access.",
+    imgAlt: 'vacation spots',
+    title: 'Vacation Spots',
+    desc: 'A React-based web application that allows users to add and manage their own vacation destinations. Users can input details about their vacation spots and mark certain spots as their favorites for easy access.',
     link: 'https://drive.google.com/drive/folders/1GaZIP40KO6l3euc2MuonVaPUVFc1AoZ3?usp=sharing',
     linkTitle: 'Screenshots of the application',
     items: [
-      "ReactJS, State Management, Side Effects Management (data fetching), Responsive Design, FireBase, Props",
+      'ReactJS, State Management, Side Effects Management (data fetching), Responsive Design, FireBase, Props',
     ],
   },
 ];
 
-export const GITHUB_LINK = "https://github.com/tien-chung";
-export const LINKEDIN_LINK = "https://www.linkedin.com/in/tchung24/";
-export const FOOTER_COPYRIGHT = "Copyright 2024. All Rights Reserved";
+export const GITHUB_LINK = 'https://github.com/tien-chung';
+export const LINKEDIN_LINK = 'https://www.linkedin.com/in/tchung24/';
+export const FOOTER_COPYRIGHT = 'Copyright 2024. All Rights Reserved';
+
+export const EDUCATION_EXP = [
+  {
+    title: 'College Journey',
+    description: [
+      'Suffolk University',
+      'BS in Computer Science'
+    ],
+    imgUrl: educationImg,
+  },
+]
+
+export const WORK_EXP = [
+  {
+    title: 'Work Experiences',
+    description: [
+      'Full Stack Developer',
+      'Robotics Repair Technician',
+      'Research Assistant',
+    ],
+    imgUrl: workImg,
+  },
+]
+
+export const PROJECT_EXP = [
+  {
+    title: 'Personal Projects',
+    description: [
+      'Quiz App',
+
+      'Senior Capstone',
+      'University Database',
+      'Vacation Spots'
+    ],
+    imgUrl: projectImg,
+  },
+]

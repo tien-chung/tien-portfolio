@@ -1,5 +1,6 @@
+import React from 'react';
 import '../Timeline.css';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap';
 import TimelineItem from './TimelineItem';
 import { WORK_EXPERIENCE_DES, WORK_TIMELINE } from '../utils/constants';
 
@@ -11,9 +12,9 @@ const Timeline = () => {
         <Col xl={6} className="text-center">
           <div className="section-title mb-4">
             <div className="text-muted mx-auto para-desc mt-4">
-            {WORK_EXPERIENCE_DES.map((des, index) => (
-              <p key={index}>{des}</p>
-            ))}
+              {WORK_EXPERIENCE_DES.map((des, index) => (
+                <p key={index}>{des}</p>
+              ))}
             </div>
           </div>
         </Col>

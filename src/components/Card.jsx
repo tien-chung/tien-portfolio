@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
   return (
     <div className="card color card-border">
@@ -8,8 +11,8 @@ const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
       </div>
       <ul className="list-group list-group-flush">
         {items.map((item, index) => (
-            <li className="list-group-item color">{item}</li>
-          ))}
+          <li key={index} className="list-group-item color">{item}</li>
+        ))}
       </ul>
       <div className="card-body">
         <a href={link} target="_blank" rel="noopener noreferrer">{linkTitle}</a>
@@ -19,3 +22,13 @@ const Card = ({imgSrc, imgAlt, title, desc, items, link, linkTitle }) => {
 }
 
 export default Card;
+
+Card.propTypes = {
+  imgSrc: PropTypes.string,
+  imgAlt: PropTypes.string,
+  title: PropTypes.string,
+  desc: PropTypes.string,
+  items: PropTypes.array,
+  link: PropTypes.string,
+  linkTitle: PropTypes.string,
+}
