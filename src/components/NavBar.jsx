@@ -6,6 +6,7 @@ import {
   LETS_CONNECT,
   ACHIEVEMENTS,
   EXPERIENCE,
+  LINKEDIN_LINK,
 } from '../utils/constants';
 import logo from '../assets/img/t.png';
 import { useNavigate } from 'react-router-dom';
@@ -78,7 +79,7 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             {/* <HashLink smooth to={`#${CONNECT}`}> */}
-            <button onClick={() => navigateToUrl('https://www.linkedin.com/in/tchung24/')}><span>{LETS_CONNECT}</span></button>
+            <button onClick={() => navigateToUrl(LINKEDIN_LINK)}><span>{LETS_CONNECT}</span></button>
             {/* </HashLink> */}
           </span>
         </Navbar.Collapse>

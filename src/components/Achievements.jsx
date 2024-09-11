@@ -1,7 +1,7 @@
 import 'react-multi-carousel/lib/styles.css';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ACHIEVEMET_DES } from '../utils/constants';
+import { ACHIEVEMET_DES, SEE_MORE } from '../utils/constants';
 import whiteBelt from '../assets/img/whiteBelt/white-belt.png';
 import yellowBelt from '../assets/img/yellowBelt/yellow-belt.png';
 import greenBelt from '../assets/img/greenBelt/green-belt.png';
@@ -32,7 +32,7 @@ const Achievements = () => {
                   <h5>Green Belt</h5>
                 </Col>
               </Row>
-              <button onClick={() => navigate('/Achievements')}>Click here to see more!</button>
+              <button onClick={() => navigate('/Achievements')}>{SEE_MORE}</button>
             </div>
           </Col>
         </Row>
