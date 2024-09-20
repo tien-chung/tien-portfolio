@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/img/tien.JPG';
+import headerImg from '../assets/img/tien.jpg';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { 
   WELCOME_MSG,
