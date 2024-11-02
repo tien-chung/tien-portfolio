@@ -10,6 +10,7 @@ import vacay from '../assets/img/projects/favoritePage.png';
 import workImg from '../assets/img/work.jpg';
 import projectImg from '../assets/img/project.jpeg';
 import educationImg from '../assets/img/school.jpeg';
+import cookingLab from '../assets/img/projects/cookingLabLogo2.png';
 
 // constants for NavBar.js
 export const TIEN_CHUNG = 'Tien Chung';
@@ -126,6 +127,17 @@ export const PROJECTS_DES = [
 ]
 
 export const PROJECTS_INFO = [
+  {
+    imgSrc: cookingLab,
+    imgAlt: 'Cooking Lab',
+    title: 'Cooking Lab',
+    desc: 'CookingLab is a personalized recipe discovery app designed to make meal planning simple and fun. Developed in collaboration with my partner, CookingLab is an innovative solution for anyone seeking fresh meal ideas without the guesswork.',
+    link: 'https://cooking-lab.netlify.app/',
+    linkTitle: 'cooking-lab.netlify.app',
+    items: [
+      'React, Bootstrap, Redux, Node.js, TypeScript, CSS, Express, Jest, Cypress, Micro-frontends, Redux, Kanban',
+    ],
+  },
   {
     imgSrc: quiz,
     imgAlt: 'Quiz App',

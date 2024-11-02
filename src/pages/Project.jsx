@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-key */
 import React, { useEffect } from 'react';
-import Card from '../components/Card';
 import NavBar from '../components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
@@ -23,7 +22,7 @@ const Project = () => {
       <Container className="edProj">
         <span className="tagline">{PROJECTS}</span>
         <Row className="justify-content-center">
-          <Col xl={6} className="text-center">
+          <Col xl={8} className="text-center">
             <div className="section-title mb-4">
               <div className="text-muted mx-auto para-desc mt-4">
                 {PROJECTS_DES.map((des, index) => (
@@ -34,13 +33,18 @@ const Project = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="project-grid">
           {PROJECTS_INFO.map((info, index) => (
-            <Col xs={12} md={6} xl={4} className="card-custom">
-              <Card
-                key={index}
-                {...info}
-              />
+            <Col xs={12} md={6} xl={4} key={index} className="project-card">
+              <div className="project-content">
+                <div className="project-image-container">
+                  <img src={info.imgSrc} alt={info.imgAlt} className="project-image" />
+                </div>
+                <h3 className="project-title">{info.title}</h3>
+                <p className="project-description">{info.desc}</p>
+                <p className="project-items">{info.items}</p>
+                <a className="project-link" href={info.link}>{info.linkTitle}</a>
+              </div>
             </Col>
           ))}
         </Row>
