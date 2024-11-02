@@ -43,7 +43,7 @@ const Project = () => {
                 <h3 className="project-title">{info.title}</h3>
                 <p className="project-description">{info.desc}</p>
                 <p className="project-items">{info.items}</p>
-                <a className="project-link" href={info.link}>{info.linkTitle}</a>
+                <a className="project-link" href={info.link} target="_blank" rel="noopener noreferrer">{info.linkTitle}</a>
               </div>
             </Col>
           ))}
