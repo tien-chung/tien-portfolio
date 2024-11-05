@@ -70,7 +70,7 @@ export const FEATURE_CHECKOUT = 'Check out my feature in Suffolk University\'s c
 export const WORK = 'Work Experience';
 export const WORK_EXPERIENCE_DES = [
   'Welcome to my career journey! Although I\'m just starting my path as a Full Stack Developer, my experience spans several years and diverse roles. I began my career as a robotics trainer in high school, which led to a position at SoftBank Robotics. This role, which I continued throughout college, provided me with invaluable experience in maintaining and repairing advanced robotic systems.',
-  'At MassMutual, where I am currently a Full Stack Developer, I focus on delivering comprehensive solutions that enhance user experience and optimize processes. My work involves developing and maintaining top transactions on MassMutual.com, automating address updates, and leading projects to improve customer retention and satisfaction. I thrive in collaborative environments, leveraging my skills to support my teammates and drive impactful results.',
+  'At my most recent role as a full stack developer at MassMutual, I focused on delivering comprehensive solutions that enhance user experience and optimize processes. My work involved developing and maintaining top transactions on MassMutual.com, automating address updates, and leading projects to improve customer retention and satisfaction. I thrive in collaborative environments, leveraging my skills to support my teammates and drive impactful results.',
   'In addition to my technical skills, I bring a strong foundation in teamwork, problem-solving, and continuous learning. I am committed to growing my expertise and contributing to innovative projects that align with business objectives and customer needs.',
 ]
 export const WORK_TIMELINE = [
