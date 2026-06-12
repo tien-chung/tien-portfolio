@@ -81,7 +81,7 @@ export const WORK_TIMELINE = [
     duration: 'Jan 2025 - Present',
     logo: meditechImg,
     description: 'Supporting Patient Care Systems across North and South America. Performing deep-dive analysis of backend systems, workflow logic, and data issues. Collborating with cross function teams to troubleshoot, validate fixes, and improve system reliability.',
-    skills: 'MAT (MEDITECH propriety programming language), Data Analysis, Application Troubleshooting, EHR (electronic health record) Systems, Communication, Problem-Solving.',
+    skills: 'MAT (MEDITECH propriety programming language), Data Analysis, Application Troubleshooting, Electronic Health Records (EHR), Communication, Problem-Solving.',
     reverse: true,
   },
   {
