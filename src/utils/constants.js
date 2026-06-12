@@ -1,4 +1,5 @@
 import suffolkImg from '../assets/img/suffolk.jpg';
+import meditechImg from '../assets/img/mt.jpeg';
 import mmIcon from '../assets/img/mm.jpg';
 import sbraIcon from '../assets/img/sb.png';
 import suffolkIcon from '../assets/img/suffolk.jpg';
@@ -74,6 +75,15 @@ export const WORK_EXPERIENCE_DES = [
   'In addition to my technical skills, I bring a strong foundation in teamwork, problem-solving, and continuous learning. I am committed to growing my expertise and contributing to innovative projects that align with business objectives and customer needs.',
 ]
 export const WORK_TIMELINE = [
+  {
+    title: 'MEDITECH',
+    role: 'Programmer Analyst',
+    duration: 'Jan 2025 - Present',
+    logo: meditechImg,
+    description: 'Supporting Patient Care Systems across North and South America. Performing deep-dive analysis of backend systems, workflow logic, and data issues. Collborating with cross function teams to troubleshoot, validate fixes, and improve system reliability.',
+    skills: 'MAT (MEDITECH propriety programming language), Data Analysis, Application Troubleshooting, EHR (electronic health record) Systems, Communication, Problem-Solving.',
+    reverse: true,
+  },
   {
     title: 'MassMutual',
     role: 'Full Stack Developer',
